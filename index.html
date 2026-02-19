@@ -4,20 +4,36 @@
   <meta charset="UTF-8">
   <title>Menú del Restaurante</title>
   <style>
-    body {
+  body {
       margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
       background: #f8f8f8;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    }
+    .btn {
+      display: inline-block;
+      margin: 30px auto; /* 👈 Espaciado elegante arriba y abajo */
+      padding: 14px 24px;
+      background: #e74c3c; /* rojo gourmet */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold; /* 👈 Negrita */
+    }
+    .btn:hover {
+      background: #c0392b;
     }
     img {
-      max-width: 100%;
+      max-width: 90%;
       height: auto;
+      margin-top: 20px; /* 👈 Espacio entre botón e imagen */
     }
   </style>
 </head>
 <body>
+  <a href="menu.pdf" class="btn" download>⬇️ Descargar menú en PDF</a>
+  <br>
   <img src="menu comprimido.png" alt="Menú del Restaurante">
 </body>
 </html>
